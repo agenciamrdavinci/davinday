@@ -1,0 +1,269 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+.titulo{
+  color: $roxo;
+  font-weight: 700;
+}
+
+.form-registro{
+  max-width: 450px;
+  margin: 0 auto;
+
+  input, button{
+    height: 3.125rem;
+    padding: .75rem;
+  }
+
+  button{
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+  }
+}
+
+.form-login{
+  max-width: 450px;
+  margin: 0 auto;
+
+  .logo{
+    display: block;
+    margin: 0 auto;
+  }
+
+  #email, #password, #login{
+    height: 3.125rem;
+    padding: .75rem;
+  }
+
+  button{
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+  }
+}
+
+.navbar{
+  background-color: #7952b3 !important;
+
+  .navbar-brand{
+    color: #fff;
+  }
+
+  .navbar-nav{
+
+    .nav-item{
+      img{
+        width: 20px;
+        height: 20px;
+      }
+
+      .dropdown-toggle::after{
+        display: none;
+      }
+
+    }
+
+    .nav-link{
+      color: #fff;
+      float: right;
+    }
+  }
+  
+
+  
+}
+
+.centro{
+
+  .header-list{
+    h1{
+      font-size: 1.3em;
+    }
+  
+    p{
+      text-transform: uppercase;
+      color: $gray;
+    }
+    
+  }
+
+
+
+  .list-group{
+    .list-group-item{
+      p{
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+// SIDEBAR-LEFT
+.sidebar-left{
+  .card{
+    border: 0;
+    // background: transparent;
+    // justify-content: space-around;
+    border: 1px solid rgba(0, 0, 0, 0.125);  
+    padding: 0.75rem 1.25rem;
+
+    .nome{
+      text-align: center;
+      font-size: 1.2rem;
+      color: $roxo;
+      font-weight: 700;
+    }
+
+    .cargo{
+      text-align: center;
+      color: $gray;
+    }
+
+    .avatar{
+      width: 100px;
+      align-self: center;
+
+      p{
+        align-self: flex-start;
+      }
+    }
+
+  }
+
+  .projetos{
+    .list-group-item:first-child{
+      color: $roxo;
+      text-transform: uppercase;
+      font-weight: 700;
+
+      
+    }
+
+    .adicionar_projeto{
+      font-size: 1.2rem;
+      color: $blue; 
+    }
+
+    .badge{
+      background-color: $roxo;
+    }
+
+    .down{
+      color: $gray;
+    }
+
+    .cliente{
+      color: $roxo;
+    }
+  }
+  
+}
+
+.andamento{
+  flex-direction: row;
+
+
+  .restantes{
+    background: #f5f5f5;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 100%;
+    font-size: 2.2rem;
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+.jobs-index{
+  .header-list{
+    display: flex;
+    flex-direction: row;
+
+    .title{
+      flex: auto;
+    }
+  }
+  
+}
+
+
+
+// PROJETOS
+#page-projetos{
+  .cliente a, .responsaveis{
+    color: $roxo;
+    font-weight: bold;
+  }
+
+  .badge{
+    background-color: $roxo;
+  }
+
+  .briefing{
+    color: $gray;
+  }
+
+  .responsaveis{
+    padding-left: 20px;
+  }
+
+  .actions{
+    margin-right: 30px;
+    
+    a{
+      height: 10px;
+      width: 10px;
+      background: #ccc;
+      border-radius: 100%;
+      padding: 5px 8px;
+      color: #fff;
+    }
+  }
+  
+}
+
+
+// FOOTER
+
+.bg-dark {
+  background-color: #7952b3 !important;
+
+  .space-2 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .h6{
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+
+  .list-group-item {
+    position: relative;
+    display: block;
+    padding: 0.75rem 0;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+
+    :hover{
+      background:transparent;
+    }
+  }
+}
+
